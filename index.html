@@ -3,92 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatchTrove - Daftar Tontonan</title>
+    <title>WatchTrove - Dashboard & Daftar Tontonan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 
-    <header>
-        <h1>WatchTrove</h1>
-        <p>Koleksi dan Jurnal Tontonan Film & Series Personal</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Daftar Tontonan</a></li>
-                <li><a href="add-movie.html">Tambah Judul Baru</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-opacity-25 border-bottom border-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand text-info fw-bold" href="index.html">🎬 WatchTrove</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm px-3" href="index.html">Daftar Tontonan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info btn-sm px-3" href="add-movie.html">+ Tambah Judul Baru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <article>
-            <h2>Koleksi Watchlist</h2>
-            <p>Berikut adalah daftar film dan series yang sedang atau sudah ditonton:</p>
+    <main class="container">
+        <div class="p-4 mb-4 rounded bg-surface border-start border-4 border-info">
+            <h2 class="h3 text-info fw-bold">Selamat Datang di WatchTrove</h2>
+            <p class="text-secondary mb-0">Koleksi dan Jurnal Tontonan Film & Series Personal Anda.</p>
+        </div>
 
-            <table border="1">
-                <caption>Daftar Riwayat dan Rencana Tontonan</caption>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Poster</th>
-                        <th>Judul Film/Series</th>
-                        <th>Tipe</th>
-                        <th>Genre</th>
-                        <th>Status</th>
-                        <th>Rating</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <img src="assets/images/poster-interstellar.jpg" alt="Poster Film Interstellar menampilkan astronaut di planet es" width="60" height="90">
-                        </td>
-                        <td>Interstellar</td>
-                        <td>Film</td>
-                        <td>Sci-Fi, Adventure</td>
-                        <td>Selesai Ditonton</td>
-                        <td>9.5/10</td>
-                        <td>
-                            <a href="detail.html">Lihat Detail</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <img src="assets/images/poster-stranger-things.jpg" alt="Poster Series Stranger Things menampilkan anak-anak bersepeda di bawah langit merah" width="60" height="90">
-                        </td>
-                        <td>Stranger Things</td>
-                        <td>Series</td>
-                        <td>Drama, Sci-Fi</td>
-                        <td>Sedang Ditonton</td>
-                        <td>8.8/10</td>
-                        <td>
-                            <a href="detail.html">Lihat Detail</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>
-                            <img src="assets/images/poster-spirited-away.jpg" alt="Poster Film Animasi Spirited Away menampilkan tokoh Chihiro dan No-Face" width="60" height="90">
-                        </td>
-                        <td>Spirited Away</td>
-                        <td>Film</td>
-                        <td>Animasi, Fantasy</td>
-                        <td>Ingin Ditonton</td>
-                        <td>-</td>
-                        <td>
-                            <a href="detail.html">Lihat Detail</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-4">
+                <div class="card bg-surface text-light p-3 border-secondary h-100">
+                    <span class="text-secondary small">Selesai Ditonton</span>
+                    <h3 class="text-success fw-bold my-1">1</h3>
+                    <small class="text-secondary">Film ditamatkan</small>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card bg-surface text-light p-3 border-secondary h-100">
+                    <span class="text-secondary small">Sedang Ditonton</span>
+                    <h3 class="text-warning fw-bold my-1">1</h3>
+                    <small class="text-secondary">Sedang berjalan</small>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card bg-surface text-light p-3 border-secondary h-100">
+                    <span class="text-secondary small">Rencana Tontonan</span>
+                    <h3 class="text-info fw-bold my-1">1</h3>
+                    <small class="text-secondary">Masuk watchlist</small>
+                </div>
+            </div>
+        </div>
+
+        <article class="card bg-surface p-4 border-secondary mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="h4 text-light border-start border-4 border-info ps-2 mb-0">Koleksi Watchlist</h3>
+                <a href="add-movie.html" class="btn btn-outline-info btn-sm">+ Tambah Baru</a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle mb-0">
+                    <thead>
+                        <tr class="text-info">
+                            <th>No</th>
+                            <th>Poster</th>
+                            <th>Judul Film/Series</th>
+                            <th>Tipe</th>
+                            <th>Genre</th>
+                            <th>Status</th>
+                            <th>Rating</th>
+                            <th class="text-center">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/images/poster-interstellar.jpg" alt="Poster Film Interstellar" class="img-thumbnail bg-secondary border-0 p-0" width="50">
+                            </td>
+                            <td class="fw-semibold">Interstellar</td>
+                            <td><span class="badge bg-secondary">Film</span></td>
+                            <td>Sci-Fi, Adventure</td>
+                            <td><span class="badge bg-success">Selesai Ditonton</span></td>
+                            <td><span class="text-warning fw-bold">9.5/10</span></td>
+                            <td class="text-center">
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">Lihat Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="assets/images/poster-stranger-things.jpg" alt="Poster Series Stranger Things" class="img-thumbnail bg-secondary border-0 p-0" width="50">
+                            </td>
+                            <td class="fw-semibold">Stranger Things</td>
+                            <td><span class="badge bg-secondary">Series</span></td>
+                            <td>Drama, Sci-Fi</td>
+                            <td><span class="badge bg-warning text-dark">Sedang Ditonton</span></td>
+                            <td><span class="text-warning fw-bold">8.8/10</span></td>
+                            <td class="text-center">
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">Lihat Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="assets/images/poster-spirited-away.jpg" alt="Poster Film Animasi Spirited Away" class="img-thumbnail bg-secondary border-0 p-0" width="50">
+                            </td>
+                            <td class="fw-semibold">Spirited Away</td>
+                            <td><span class="badge bg-secondary">Film</span></td>
+                            <td>Animasi, Fantasy</td>
+                            <td><span class="badge bg-info text-dark">Ingin Ditonton</span></td>
+                            <td><span class="text-secondary">-</span></td>
+                            <td class="text-center">
+                                <a href="detail.html" class="btn btn-outline-info btn-sm">Lihat Detail</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
     </main>
 
-    <footer>
-        <p>WatchTrove - Dibuat oleh Ravie Arya Desta Wijayana (103022400147)</p>
+    <footer class="text-center py-4 text-secondary small border-top border-secondary mt-4">
+        <p class="mb-0">WatchTrove - Dibuat oleh Ravie Arya Desta Wijayana (103022400147)</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

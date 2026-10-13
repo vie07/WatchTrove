@@ -4,74 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchTrove - Detail Film: Interstellar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 
-    <header>
-        <h1>WatchTrove</h1>
-        <p>Koleksi dan Jurnal Tontonan Film & Series Personal</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Daftar Tontonan</a></li>
-                <li><a href="add-movie.html">Tambah Judul Baru</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <article>
-            <h2>Interstellar (2014)</h2>
-            
-            <img src="assets/images/poster-interstellar.jpg" alt="Poster Utama Film Interstellar dengan visual penjelajahan luar angkasa" width="200" height="300">
-
-            <section>
-                <h3>Informasi Film</h3>
-                <ul>
-                    <li><strong>Tipe:</strong> Film Layar Lebar</li>
-                    <li><strong>Sutradara:</strong> Christopher Nolan</li>
-                    <li><strong>Genre:</strong> Sci-Fi, Petualangan, Drama</li>
-                    <li><strong>Durasi:</strong> 169 menit</li>
-                    <li><strong>Status Tonton:</strong> Selesai Ditonton</li>
-                    <li><strong>Rating Pribadi:</strong> 9.5 / 10</li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-opacity-25 border-bottom border-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand text-info fw-bold" href="index.html">🎬 WatchTrove</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info btn-sm px-3" href="index.html">Daftar Tontonan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm px-3" href="add-movie.html">+ Tambah Judul Baru</a>
+                    </li>
                 </ul>
-            </section>
+            </div>
+        </div>
+    </nav>
 
-            <section>
-                <h3>Sinopsis</h3>
-                <p>
-                    Ketika masa depan Bumi terancam oleh krisis pangan dan badai debu, sekelompok astronaut dan ilmuwan dikirim melalui lubang cacing (wormhole) di dekat Saturnus untuk mencari planet baru yang layak huni bagi kelangsungan hidup umat manusia.
-                </p>
-            </section>
+    <main class="container">
+        <article class="card bg-surface p-4 border-secondary mb-4">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="assets/images/poster-interstellar.jpg" alt="Poster Utama Interstellar" class="img-fluid rounded shadow" style="max-height: 380px;">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 class="h3 text-info fw-bold">Interstellar (2014)</h2>
+                    <div class="mb-3">
+                        <span class="badge bg-secondary">Film Layar Lebar</span>
+                        <span class="badge bg-info text-dark">Sci-Fi, Petualangan, Drama</span>
+                        <span class="badge bg-success">Selesai Ditonton</span>
+                    </div>
 
-            <section>
-                <h3>Catatan & Ulasan Pribadi</h3>
-                <p>
-                    Film fiksi ilmiah terbaik dengan akurasi sains dan sentuhan emosional hubungan ayah-anak yang kuat. Komposisi musik Hans Zimmer menyempurnakan suasana ruang angkasa yang megah sekaligus mencekam.
-                </p>
-            </section>
+                    <h5 class="text-warning fw-bold mb-3">★ Rating Pribadi: 9.5 / 10</h5>
 
-            <section>
-                <h3>Tontonan Lain di Watchlist</h3>
-                <figure>
-                    <img src="assets/images/poster-stranger-things.jpg" alt="Thumbnail Poster Stranger Things" width="70" height="105">
-                    <figcaption>Stranger Things (Series)</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/images/poster-spirited-away.jpg" alt="Thumbnail Poster Spirited Away" width="70" height="105">
-                    <figcaption>Spirited Away (Film)</figcaption>
-                </figure>
-            </section>
+                    <h5 class="text-light">Informasi Film</h5>
+                    <ul class="text-secondary small">
+                        <li><strong>Sutradara:</strong> Christopher Nolan</li>
+                        <li><strong>Durasi:</strong> 169 menit</li>
+                    </ul>
 
-            <nav>
-                <p><a href="index.html">&larr; Kembali ke Daftar Tontonan</a></p>
-            </nav>
+                    <h5 class="text-light mt-3">Sinopsis</h5>
+                    <p class="text-secondary small">
+                        Ketika masa depan Bumi terancam oleh krisis pangan dan badai debu, sekelompok astronaut dan ilmuwan dikirim melalui lubang cacing (wormhole) di dekat Saturnus untuk mencari planet baru yang layak huni bagi kelangsungan hidup umat manusia.
+                    </p>
+
+                    <h5 class="text-light mt-3">Catatan & Ulasan Pribadi</h5>
+                    <p class="text-secondary small">
+                        Film fiksi ilmiah terbaik dengan akurasi sains dan sentuhan emosional hubungan ayah-anak yang kuat. Komposisi musik Hans Zimmer menyempurnakan suasana ruang angkasa yang megah sekaligus mencekam.
+                    </p>
+
+                    <a href="index.html" class="btn btn-outline-secondary btn-sm mt-3">&larr; Kembali ke Daftar Tontonan</a>
+                </div>
+            </div>
         </article>
     </main>
 
-    <footer>
-        <p>WatchTrove - Dibuat oleh Ravie Arya Desta Wijayana (103022400147)</p>
+    <footer class="text-center py-4 text-secondary small border-top border-secondary mt-4">
+        <p class="mb-0">WatchTrove - Dibuat oleh Ravie Arya Desta Wijayana (103022400147)</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
